@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/JS/Test_AIML_A_2200321530190/CSS/login.css">
-    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <center>
     <h1>LOGIN</h1>
-    <form action="">
+    <form onsubmit="login(event)" id="loginForm">
         <span>UserId:  </span>  
         <input type="text" name="" id="user1">
         <br><br>
         <span>Password  </span>  
         <input type="password" name="" id="pass1">
         <br><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="submit" >Login</button>
+        <button type="reset" class="reset-btn" onclick="resetForm()" >Reset</button>
     </form>
     </center>
 </body>

@@ -1,5 +1,15 @@
-const form=document.getElementById("for")
-form.addEventListener("submit",(e)=>{
-    const k1=document.getElementById("user1")
-    const k2=document.getElementById("pass")
-})
+function login() {
+    event.preventDefault();
+    const username = document.getElementById("user1").value;
+    const password = document.getElementById("pass1").value;
+
+    if (username === "admin" && password === "admin") {
+        window.location.href = "../HTML/welcome.html";
+    } else {
+        alert("Wrong Username or password")
+    }
+}
+
+function resetForm() {
+    document.getElementById("loginForm").reset();
+}
